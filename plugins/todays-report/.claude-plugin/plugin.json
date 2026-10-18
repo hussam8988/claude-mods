@@ -1,0 +1,1 @@
+{ "name": "todays-report", "version": "1.0.0", "description": "/report shows how many tasks Claude did, the hours it saved you and what that time is worth, by day, week, month and year", "author": { "name": "Hussam El-Khazendar" }, "types": "./types/index.d.ts" }
