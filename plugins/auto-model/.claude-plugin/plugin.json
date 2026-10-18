@@ -1,0 +1,1 @@
+{ "name": "auto-model", "version": "1.0.0", "description": "Reads your first prompt and picks Haiku, Sonnet or Opus for the whole session (never switches mid-session, so the prompt cache stays intact)", "author": { "name": "Hussam El-Khazendar" }, "types": "./types/index.d.ts" }
