@@ -1,1 +1,1 @@
-{ "name": "prompt-upgrade", "version": "1.0.0", "description": "/prompt-upgrade asks a few quick questions, then rewrites a short prompt into a detailed one you can run, edit or copy", "author": { "name": "Hussam El-Khazendar" }, "types": "./types/index.d.ts" }
+{ "name": "prompt-upgrade", "version": "1.0.0", "description": "/boost asks a few quick questions, then rewrites a short prompt into a detailed one you can run, edit or copy", "author": { "name": "Hussam El-Khazendar" }, "types": "./types/index.d.ts" }
