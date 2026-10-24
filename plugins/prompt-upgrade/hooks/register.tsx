@@ -3,7 +3,7 @@ import type { Register } from 'claude-code'
 
 import type { UpgradeView } from '../types'
 
-// Prompt Upgrade — /upgrade <short prompt>
+// Prompt Upgrade — /prompt-upgrade <short prompt>
 // Asks a few quick questions, then rewrites the short prompt into a detailed
 // one you can edit, copy, put in the prompt box, or run with one click.
 
@@ -111,17 +111,17 @@ export const register: Register = on => {
     const out = await next(e)
     try {
       await $.command.register({
-        name: 'upgrade',
+        name: 'prompt-upgrade',
         description: 'Prompt Upgrade: answer a few questions, get a detailed prompt',
         argumentHint: '<your short prompt>',
       })
     } catch (err) {
-      $.ui.log('prompt-upgrade: could not add /upgrade (' + String(err) + ')')
+      $.ui.log('prompt-upgrade: could not add /prompt-upgrade (' + String(err) + ')')
     }
     return out
   })
 
-  on('command.run', { command: 'upgrade' }, async ($, e) => {
+  on('command.run', { command: 'prompt-upgrade' }, async ($, e) => {
     const opened = await $.ui.open({ id: PANE, title: 'Prompt Upgrade', focus: true })
     const text = (e.args || '').trim()
     if (text === '') {
